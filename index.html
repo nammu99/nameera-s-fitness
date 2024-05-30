@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nameera's Fitness</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Workbench&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            /* background-color: black; */
+            background: url('images/pexels-pixabay-163351.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: "Tilt Neon", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "XROT" 0,
+                "YROT" 0;
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 103px;
+            top: 16px;
+            text-align: center;
+            margin: -19px 10px;
+
+        }
+
+        .left img {
+            width: 70px;
+            filter: invert(100%);
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 48%;
+            margin: 16px 347px;
+        }
+
+        .right {
+            position: absolute;
+            /* border: 2px solid blue; */
+            display: inline-block;
+            right: 34px;
+            top: 33px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: "Tilt Neon", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "XROT" 0,
+                "YROT" 0;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 62px 124px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            font-size: 25px;
+            margin: 11px auto;
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 1px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-family: "Tilt Neon", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "XROT" 0,
+                "YROT" 0;
+        }
+
+        .container button {
+            display: block;
+            width: 500px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/icons8-dumbbell-50.png" alt="">
+            <div>Nameera's Fitness</div>
+        </div>
+
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- righ box is for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Texas now.</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name.">
+                <input type="text" name="" placeholder="Enter your Age.">
+                <input type="text" name="" placeholder="Enter your Gender.">
+                <input type="text" name="" placeholder="Enter your Location.">
+                <input type="text" name="" placeholder="Enter your Phone Number.">
+                <input type="text" name="" placeholder="Enter your Email.">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
